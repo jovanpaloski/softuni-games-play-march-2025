@@ -2,9 +2,10 @@ import './App.css'
 
 function App() {
   return (
-    <>
-      <h1>Games Play</h1>
-    </>
+    <div id='box'>
+
+      
+    </div>
   )
 }
 
