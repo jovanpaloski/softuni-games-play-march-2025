@@ -1,0 +1,26 @@
+{
+    "955c8ce0-3a5a-40a2-b9db-af508f9552fc": {
+        "title": "MK3 Ultimate",
+        "category": "Fighting",
+        "maxLevel": "10",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/en/f/f9/Ultimate_MK3.png",
+        "summary": "Ultimate Mortal Kombat 3 was released to arcades in 1995. It is an update of Mortal Kombat 3, featuring altered gameplay, additional characters, and new arenas . Various home versions of the game were released soon after, although none of these were completely identical to the arcade version.",
+        "_id": "955c8ce0-3a5a-40a2-b9db-af508f9552fc"
+    },
+    "dcbd1d7e-96dd-4938-81d2-dbf1a08e877f": {
+        "title": "Counter Strike 1.6",
+        "category": "FPS",
+        "maxLevel": "100",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/en/6/67/Counter-Strike_Box.jpg",
+        "summary": "Play the world's number 1 online action game. Engage in an incredibly realistic brand of terrorist warfare in this wildly popular team-based game. Ally with teammates to complete strategic missions. Take out enemy sites. Rescue hostages. Your role affects your team's success. Your team's success affects",
+        "_id": "dcbd1d7e-96dd-4938-81d2-dbf1a08e877f"
+    },
+    "169dba10-7262-4eda-9f41-b3a0fdbbaa23": {
+        "title": "Sonic the Hedgehog",
+        "category": "Platformer",
+        "maxLevel": "7",
+        "imageUrl": "https://cdn.mos.cms.futurecdn.net/mbKdiWX9kYgJBiig3mF6kg-1200-80.jpg",
+        "summary": "Sonic's recurring elements include a ring-based health system, level locales such as Green Hill Zone, and fast-paced gameplay. The games typically feature Sonic setting out to stop Eggman's schemes for world domination, and the player navigates levels that include springs, slopes, bottomless pits, and vertical loops. Later games added a large cast of characters; some, such as Miles 'Tails' Prower, Knuckles the Echidna, and Shadow the Hedgehog, have starred in spin-offs. The franchise has crossed over with other video game franchises in games such as Mario & Sonic, Sega All-Stars, and Super Smash Bros. Outside of video games, Sonic includes comic books published by Archie Comics, DC Comics, Fleetway Publications, and IDW Publishing; animated series produced by DIC Entertainment, TMS Entertainment, Genao Productions, and Netflix; a live-action film series produced by Paramount Pictures; and toys, including a line of Lego construction sets.",
+        "_id": "169dba10-7262-4eda-9f41-b3a0fdbbaa23"
+    }
+}
