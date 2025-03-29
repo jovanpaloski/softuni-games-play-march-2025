@@ -4,19 +4,22 @@ import { useParams } from "react-router"
 import gameService from "../../services/gameService.js";
 import CommentsShow from "../comments-show/CommentsShow";
 import CommentsCreate from "../comments-add/CommentsCreate";
+import commentService from "../../services/commentService.js";
 
 export default function GameDetails({
     email,
 }) {
     const navigate = useNavigate();
     const [game, setGame] = useState({});
+    const [comments, setComments] = useState([]);
     const { gameId } = useParams();
 
     useEffect(() => {
-        (async () => {
-            const result = await gameService.getOne(gameId);
-            setGame(result);
-        })();
+        gameService.getOne(gameId)
+            .then(setGame)
+
+        commentService.getAll(gameId)
+            .then(setComments)
     }, [gameId]);
 
     const gameDeleteClickHandler = async () => {
@@ -29,6 +32,10 @@ export default function GameDetails({
         await gameService.delete(gameId);
 
         navigate('/games');
+    }
+
+    const commentCreateHandler = (newComment) => {
+        setComments(state => [...state, newComment]);
     }
 
     return (
@@ -45,16 +52,15 @@ export default function GameDetails({
 
                 <p className="text">{game.summary}</p>
 
-                <CommentsShow />
+                <CommentsShow comments={comments} />
 
-                {/* <!-- Edit/Delete buttons ( Only for creator of this game )  --> */}
                 <div className="buttons">
                     <Link to={`/games/${gameId}/edit`} className="button">Edit</Link>
                     <button onClick={gameDeleteClickHandler} className="button">Delete</button>
                 </div>
             </div>
 
-            <CommentsCreate email={email} gameId={gameId} />
+            <CommentsCreate email={email} gameId={gameId} onCreate={commentCreateHandler} />
         </section>
     )
 }
